@@ -1,0 +1,24 @@
+<h2>Search SafeBlock-SA</h2>
+<form method="GET" action="">
+  <input type="text" name="search" placeholder="Search...">
+  <button type="submit">Search</button>
+</form>
+
+<div>
+  You searched for:
+  <script>document.write(location.search.split('search=')[1])</script>
+</div><div id="message"></div>
+
+<script>
+const name = new URLSearchParams(window.location.search).get('name');
+document.getElementById('message').innerHTML = "Hello " + name;
+</script><section class="hero">
+  <!-- BANNER AT TOP -->
+  <img src="hero-banner.jpg" alt="SafeBlock SA Banner" style="width: 100%; max-width: 1200px; height: auto; border-radius: 20px; margin-bottom: 60px;">
+  
+  <!-- PHONE MOCKUP BELOW -->
+  <div class="phone-mockup" style="text-align: center;">
+    <img src="mockup.png" alt="SafeBlock App Mockup" style="width: 100%; max-width: 320px; height: auto;">
+    <p style="margin-top: 20px; color: #94a3b8;">Live panic button + community alerts</p>
+  </div>
+</section>img src="app.jpg" alt="SafeBlock App
