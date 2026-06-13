@@ -6,8 +6,7 @@
 
 <div>
   You searched for:
-  <script>document.write(location.search.split('search=')[1])</script>
-</div><div id="message"></div>
+  <script>document.write(decodeURIComponent(location.search.split('search=')[1]))</script>
 
 <script>
 const name = new URLSearchParams(window.location.search).get('name');
