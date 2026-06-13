@@ -22,3 +22,23 @@ document.getElementById('message').innerHTML = "Hello " + name;
     <p style="margin-top: 20px; color: #94a3b8;">Live panic button + community alerts</p>
   </div>
 </section>img src="app.jpg" alt="SafeBlock App
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestLab - XSS Practice</title>
+</head>
+<body>
+
+<h2>Search TestLab</h2>
+<form method="GET" action="">
+  <input type="text" name="search" placeholder="Type anything...">
+  <button type="submit">Search</button>
+</form>
+
+<div>
+  You searched for:
+  <script>document.write(location.search.split('search=')[1])</script>
+</div>
+
+</body>
+</html>
